@@ -28,7 +28,11 @@
 	var allA = $(".card-line"), i = 0, len = allA.length;
 	for (; i < len; i++) {
 	    allA[i].style.backgroundColor = '#' + Math.floor(Math.random() * Math.pow(2, 24)).toString(16);
-	  };
+	};
+
+	 $(function () {
+	 	$("[data-toggle='tooltip']").tooltip();
+	 });
 
 
 </script>
