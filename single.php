@@ -17,7 +17,7 @@ get_header(); ?>
         	?>
 		        <div class="col-xs-12 col-sm-12 col-md-12">
 		          <div class="card box-rash">
-                    <div class="card-meta card-meta-right"><a href="http://fzerotriluby.com/"><span class="card-line"></span></a></div>
+                    <div class="card-meta card-meta-right"><a href="http://fzerotriluby.com/" data-toggle="tooltip" data-placement="left" title="点击返回首页"><span class="card-line"></span></a></div>
 		            <div class="card-body">
                         <h2 class="card-title"><?php the_title(); ?></h2>
 		            	<?php the_content(); ?>
