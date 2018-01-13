@@ -7,7 +7,7 @@ Wordpress Theme.
 ### DEMO:
 [Cheak here for Watching online](http://fzerotriluby.com/)
 
-![The fzerot wordpress theme](http://fzerotriluby.com/wp-content/uploads/2018/01/TIM%E6%88%AA%E5%9B%BE20180113132843-1024x582.png)
+![The fzerot wordpress theme](http://fzerotriluby.com/wp-content/uploads/2018/01/sr.png)
 
 如果你是**开发者**，欢迎 Fork 该项目；
 
