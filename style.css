@@ -1,0 +1,201 @@
+/*
+Theme Name: 403
+Theme URI: http://wordpress.org/themes/403
+Author: the 403 team
+Author URI: http://ignorel.com/
+Description: The 403 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+	background-color: #f5f8fa;
+	color: #212529;
+}
+
+div.wrap {
+	margin-bottom: 50px;
+}
+
+img {
+	height: auto;
+}
+
+.box-rash {
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);
+}
+
+.card {
+	border: none;
+	margin-top: 35px;
+}
+
+.home .card img {
+	width: 100%;
+	height: auto;
+}
+
+div.card-meta {
+	position: absolute;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+div.card-meta-left {
+	top: 1%;
+	left: 2%;
+}
+
+div.card-meta-right {
+	top: 20px;
+	right: 2%;
+}
+
+div.card-meta-right span {
+	width:14px;
+	height:14px;
+	border-radius: 100%;
+	transform:rotate(360deg);
+	-moz-transform:rotate(360deg); /* Firefox 4 */
+	-webkit-transform:rotate(360deg); /* Safari and Chrome */
+	-o-transform:rotate(360deg); /* Opera */
+
+	animation: myfirst 5s linear 2s infinite alternate;
+	/* Firefox: */
+	-moz-animation: myfirst 5s linear 2s infinite alternate;
+	/* Safari 和 Chrome: */
+	-webkit-animation: myfirst 5s linear 2s infinite alternate;
+	/* Opera: */
+	-o-animation: myfirst 5s linear 2s infinite alternate;
+}
+@keyframes myfirst
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+div.card-meta > a {
+	color: #fff;
+	text-shadow: 0 0 5px rgba(27, 27, 27, 0.27);
+}
+
+div.card-meta-left span.card-line {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	border-radius: 100%;
+}
+
+div.card-meta-right span.card-line {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100%;
+}
+
+h2.card-title {
+	margin-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.99px) {
+	div.carousel-h {
+		--heightA: 576px;
+		--heightB: calc(var(--heightA) / 2);
+		height: var(--heightB);
+	}
+
+	div.card-body img {
+		width: 100%;
+	}
+
+	div.card-meta-left {
+		top: 4%;
+		left: 4%;
+	}
+
+	div.card-meta-right {
+		right: 4%;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.99px) {
+	div.carousel-h {
+		--heightA: 768px;
+		--heightB: calc(var(--heightA) / 3);
+		height: var(--heightB);
+	}
+
+	div.card-body img {
+		width: 100%;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.99px) {
+	div.carousel-h {
+		--heightA: 768px;
+		--heightB: calc(var(--heightA) / 4);
+		height: var(--heightB);
+	}
+
+	div.card-body img {
+		width: 80%;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.99px) {
+	div.carousel-h {
+		--heightA: 992px;
+		--heightB: calc(var(--heightA) / 5);
+		height: var(--heightB);
+	}
+
+	div.card-body img {
+		width: 60%;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	div.carousel-h {
+		--heightA: 1200px;
+		--heightB: calc(var(--heightA) / 6);
+		height: var(--heightB);
+	}
+
+	div.card-body img {
+		width: 50%;
+	}
+}
